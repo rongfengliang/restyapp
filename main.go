@@ -12,7 +12,7 @@ import (
 )
 
 var (
-	echoEndpoint = flag.String("echo_endpoint", "localhost:9000", "endpoint of YourService")
+	echoEndpoint = flag.String("echo_endpoint", "rpcserver:9000", "endpoint of YourService")
 )
 
 func run2() error {
