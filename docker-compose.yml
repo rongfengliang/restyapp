@@ -1,0 +1,14 @@
+version: '3'
+services:
+  rpcserver:
+    image: rpcserver
+    build:
+      context: ./rpcserver
+  gwserver:
+    image: gwserver
+    ports:
+      - 8089:8089
+    build:
+      context: .
+    depends_on:
+      - rpcserver

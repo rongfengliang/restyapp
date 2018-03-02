@@ -1,0 +1,19 @@
+syntax="proto3";
+package userserviceapp;
+option go_package="userserviceapp";
+import "google/api/annotations.proto";
+service UserServiceApp { 
+    rpc Message(AppMessage) returns (AppResponse) {
+         option (google.api.http) = { 
+             post: "/v1/userapp/echo"
+             body: "*" 
+        };
+    } 
+} 
+
+message AppMessage{
+    string message=1;
+}
+message AppResponse{
+    string message=1;
+}
