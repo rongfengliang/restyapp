@@ -1,0 +1,7 @@
+package: github.com/rongfengliang/restyapp/rpcserver
+import:
+- package: github.com/rongfengliang/restyapp
+  subpackages:
+  - service/pb
+  - userservice/pb
+- package: google.golang.org/grpc

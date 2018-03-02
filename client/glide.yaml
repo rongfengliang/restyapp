@@ -1,0 +1,6 @@
+package: github.com/rongfengliang/restyapp/client
+import:
+- package: github.com/rongfengliang/restyapp
+  subpackages:
+  - service/pb
+- package: google.golang.org/grpc
